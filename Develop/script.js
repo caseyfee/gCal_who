@@ -21,12 +21,17 @@
   // block by comparing the id to the current hour. HINTS: How can the id
   // attribute of each time-block be used to conditionally add or remove the
   // past, present, and future classes? How can Day.js be used to get the
-  // current hour in 24-hour time?
+  // current hour in 24-hour time?         
+         
 
+  var hour = parseInt(dayjs().format('hh'));
+  console.log(hour);
 
-
-// for (var i=6; i<11,i++ ) {
-//       // If time is <= ("hour-"+i) to current time, add/remove class
+  for (var i=6; i<23; i++) {
+      if (i=12) {
+      console.log("yes");
+}}
+      // If time is <= ("hour-"+i) to current time, add/remove class
       
       // $("hour-"[i]).click(function(){
       //       $("hour-"[i]).addClass("past");
@@ -46,7 +51,7 @@
   // the values of the corresponding textarea elements. HINT: How can the id
   // attribute of each time-block be used to do this?
   //
-        // 
+      
 
 
 
@@ -57,7 +62,9 @@
 // TODO: Add code to display the current date in the header of the page.
       var currentTime = $('#currentDay');
       currentTime.text(dayjs().format('ddd, MMM DD YYYY, h:mm:ss a'));
-      console.log(dayjs().hour);
+
+      // var currentTime = dayjs().format('ddd, MMM DD YYYY, h:mm:ss a') ;
+      // $('#currentDay')=currentTime.text();
 
       
 }); 
