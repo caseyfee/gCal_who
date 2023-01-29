@@ -1,10 +1,7 @@
-// Wrap all code that interacts with the DOM in a call to jQuery to ensure that
-// the code isn't run until the browser has finished rendering all the elements
-// in the html.
-
-
-
-
+// Wrap all code that interacts with the DOM in a call to jQuery 
+      $(document).ready(function(){
+            // Write code here
+        
 
   // TODO: Add a listener for click events on the save button. This code should
   // use the id in the containing time-block as a key to save the user input in
@@ -17,17 +14,31 @@
         // $(function () {
           // saveBtn.onclick = 
 
+      //     var SaveButton = $('#button-sm');
+      //     SaveButton.hide();
+
   // TODO: Add code to apply the past, present, or future class to each time
   // block by comparing the id to the current hour. HINTS: How can the id
   // attribute of each time-block be used to conditionally add or remove the
   // past, present, and future classes? How can Day.js be used to get the
   // current hour in 24-hour time?
 
-        // If time is <= to current time, add/remove class
 
-        // if time hour = current time, use present class 
 
-        // if time hour >= to current time , use future class
+// for (var i=6; i<11,i++ ) {
+//       // If time is <= ("hour-"+i) to current time, add/remove class
+      
+      // $("hour-"[i]).click(function(){
+      //       $("hour-"[i]).addClass("past");
+      // });
+
+//       //  if time hour = current time, use present class 
+
+//         // if time hour >= to current time , use future class
+// }
+        
+
+        
   
   // eventDetails{  // }
 
@@ -39,13 +50,14 @@
 
 
 
-  // TODO: Add code to display the current date in the header of the page.
   
-//   var currentDay = $('#currentDay');
-//    currentDay.textContent = daysjs.format('{YYYY} MM-DDTHH:mm:ss SSS [Z] A');
-// });
 
-// $(document).ready(function() {
-//   $('#currentDay').datepicker().datepicker('setDate', 'today')});
+      
 
-  $.datepicker.formatDate('yy/mm/dd', new Date());
+// TODO: Add code to display the current date in the header of the page.
+      var currentTime = $('#currentDay');
+      currentTime.text(dayjs().format('ddd, MMM DD YYYY, h:mm:ss a'));
+      console.log(dayjs().hour);
+
+      
+}); 
