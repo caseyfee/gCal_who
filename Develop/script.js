@@ -23,14 +23,31 @@
   // past, present, and future classes? How can Day.js be used to get the
   // current hour in 24-hour time?         
          
+      var hour = parseInt(dayjs().format('HH'));
+//   console.log(hour);
+       
+     
 
-  var hour = parseInt(dayjs().format('hh'));
-  console.log(hour);
+  for (var i=6; i<=23; i++) {
+      if (i===hour) {
+      // console.log("hour-"(i));
+      // $("hour-"[hour]).addClass("past");
+      // $("hour-" + i).addClass("past");
+      // console.log("current hour is " + hour)
+      // console.log("hour-"+i);
+      $("#hour-"+i).addClass("present");
+            // console.log(typeof("hour-"+i));
+      }
+      else if(i<hour) {
+            $("#hour-"+i).addClass("past");
+      }
+      else if(i>hour) {
+            $("#hour-"+i).addClass("future");
+      }
+  }
 
-  for (var i=6; i<23; i++) {
-      if (i=12) {
-      console.log("yes");
-}}
+// }
+
       // If time is <= ("hour-"+i) to current time, add/remove class
       
       // $("hour-"[i]).click(function(){
