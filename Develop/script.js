@@ -14,12 +14,12 @@
 
   saveBtnEl.on('click', function () {
       var time = $(this).parent().attr("id");
-      console.log(this);
+      console.log(time);
       var textInput = $(this).siblings(".description").val();
-      console.log(this);
+      console.log(textInput);
       
       
-      localStorage.setItem("time", "textInput");
+      localStorage.setItem(time, textInput);
       // $('#hour-6 .description').val(localStorage.getItem("hour-6"));
       // $('#hour-7 .description').val(localStorage.getItem("hour-7"));
       // $('#hour-8 .description').val(localStorage.getItem("hour-8"));
