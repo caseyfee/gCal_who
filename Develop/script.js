@@ -8,36 +8,36 @@
   // function? How can DOM traversal be used to get the "hour-x" id of the
   // time-block containing the button that was clicked? How might the id be
   // useful when saving the description in local storage?
-  //
-
-
   
   
   var saveBtnEl = $("#saveBtn");
 
   saveBtnEl.on('click', function () {
-      var textInput = $(this).siblings(".description");
       var time = $(this).parent().attr("id");
-
-      localStorage.setItem(time, textInput);
-      $('#hour-6 .saveBtn').val(localStorage.getItem("hour6"));
-      $('#hour-7 .saveBtn').val(localStorage.getItem("hour7"));
-      $('#hour-8 .saveBtn').val(localStorage.getItem("hour8"));
-      $('#hour-9 .saveBtn').val(localStorage.getItem("hour9"));
-      $('#hour-10 .saveBtn').val(localStorage.getItem("hour10"));
-      $('#hour-11 .saveBtn').val(localStorage.getItem("hour11"));
-      $('#hour-12 .saveBtn').val(localStorage.getItem("hour12"));
-      $('#hour-13 .saveBtn').val(localStorage.getItem("hour13"));
-      $('#hour-14 .saveBtn').val(localStorage.getItem("hour14"));
-      $('#hour-15 .saveBtn').val(localStorage.getItem("hour15"));
-      $('#hour-16 .saveBtn').val(localStorage.getItem("hour16"));
-      $('#hour-17 .saveBtn').val(localStorage.getItem("hour17"));
-      $('#hour-18 .saveBtn').val(localStorage.getItem("hour18"));
-      $('#hour-19 .saveBtn').val(localStorage.getItem("hour19"));
-      $('#hour-20 .saveBtn').val(localStorage.getItem("hour20"));
-      $('#hour-21 .saveBtn').val(localStorage.getItem("hour21"));
-      $('#hour-22 .saveBtn').val(localStorage.getItem("hour22"));
-      $('#hour-23 .saveBtn').val(localStorage.getItem("hour23"));
+      console.log(this);
+      var textInput = $(this).siblings(".description").val();
+      console.log(this);
+      
+      
+      localStorage.setItem("time", "textInput");
+      // $('#hour-6 .description').val(localStorage.getItem("hour-6"));
+      // $('#hour-7 .description').val(localStorage.getItem("hour-7"));
+      // $('#hour-8 .description').val(localStorage.getItem("hour-8"));
+      // $('#hour-9 .description').val(localStorage.getItem("hour-9"));
+      // $('#hour-10 .description').val(localStorage.getItem("hour-10"));
+      // $('#hour-11 .description').val(localStorage.getItem("hour-11"));
+      // $('#hour-12 .description').val(localStorage.getItem("hour-12"));
+      // $('#hour-13 .description').val(localStorage.getItem("hour-13"));
+      // $('#hour-14 .description').val(localStorage.getItem("hour-14"));
+      // $('#hour-15 .description').val(localStorage.getItem("hour-15"));
+      // $('#hour-16 .description').val(localStorage.getItem("hour-16"));
+      // $('#hour-17 .description').val(localStorage.getItem("hour-17"));
+      // $('#hour-18 .description').val(localStorage.getItem("hour-18"));
+      // $('#hour-19 .description').val(localStorage.getItem("hour-19"));
+      // $('#hour-20 .description').val(localStorage.getItem("hour-20"));
+      // $('#hour-21 .description').val(localStorage.getItem("hour-21"));
+      // $('#hour-22 .description').val(localStorage.getItem("hour-22"));
+      // $('#hour-23 .description').val(localStorage.getItem("hour-23"));
 
     });
       // var textInput = $("#hour-"+i)
