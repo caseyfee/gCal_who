@@ -40,20 +40,7 @@
       // $('#hour-23 .description').val(localStorage.getItem("hour-23"));
 
     });
-      // var textInput = $("#hour-"+i)
 
-      //   $(function () {
-      //       $("#hour-"+i).('click', function(){
-      //       var textArea ="";
-      //       $(".description").each(function(key,value) {
-      //             var text = $(this).find()
-      //       })
-
-      //       })
-      //     saveBtn.onclick = 
-      //   })
-
-          // text area class= description, id/key = "#hour-"+i
 
 
   // TODO: Add code to apply the past, present, or future class to each time
